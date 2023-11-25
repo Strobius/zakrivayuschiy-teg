@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -10,10 +11,17 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="icon" href="./images/favicon .ico" />
+    <link rel="icon" href="./svg/favicon .svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon .png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
+      <a class="header-title">&lt;/HTML&gt;</a>
+      <div>
+        <h1 class="header-description">закрывающий тег</h1>
+      </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +48,76 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="cards">
+        <div class="cards-list">
+          <article class="cards-list_item">
+            <h2 class="card-title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <div class="a">
+              <img
+                src="./images/bus.png"
+                alt="Автобус"
+                class="cards-list_image"
+              />
+              <p class="image-label">&lt;/HTML&gt;</p>
+            </div>
+            <div class="card-description_container">
+              <span class="card-text_container">
+                <p class="card-text">
+                  Это было самое начало пути. На этом этапе важно было
+                  проникнуться основами и настроиться на учёбу. И, возможно,
+                  подумать, как новые знания могут повлиять на ваше будущее.
+                </p>
+                <p class="card-text">
+                  Место для ваших воспоминаний о начале обучения.
+                </p>
+              </span>
+              <button type="button" class="card__like-button">
+                <span>
+                  <a class="button__text">Like</a>
+                </span>
+                <svg width="39" height="36" viewBox="0 0 39 36" fill="currentcolor" xmlns="http://www.w3.org/2000/svg" class="like-icon">
+                  <g id="Property 1=initial">
+                  <g id="Vector">
+                  <path d="M12 6H9V9H12V6Z" />
+                  <path d="M15 6H12V9H15V6Z" />
+                  <path d="M9 9H6V12H9V9Z" />
+                  <path d="M9 12H6V15H9V12Z" />
+                  <path d="M9 15H6V18H9V15Z" />
+                  <path d="M18 6H15V9H18V6Z" />
+                  <path d="M12 18H9V21H12V18Z" />
+                  <path d="M15 21H12V24H15V21Z" />
+                  <path d="M18 24H15V27H18V24Z" />
+                  <path d="M27 6H30V9H27V6Z" />
+                  <path d="M24 6H27V9H24V6Z" />
+                  <path d="M30 9H33V12H30V9Z" />
+                  <path d="M30 12H33V15H30V12Z" />
+                  <path d="M30 15H33V18H30V15Z" />
+                  <path d="M21 6H24V9H21V6Z" />
+                  <path d="M27 18H30V21H27V18Z" />
+                  <path d="M24 21H27V24H24V21Z" />
+                  <path d="M21 24H24V27H21V24Z" />
+                  <path d="M21 9H18V12H21V9Z" />
+                  <path d="M21 27H18V30H21V27Z"/>
+                  </g>
+                  </g>
+                  </svg>
+              </button>
+            </div>
+          </article>
+          <!-- <li class="cards-list_item"></li>
+          <li class="cards-list_item"></li>
+          <li class="cards-list_item"></li>
+          <li class="cards-list_item"></li>
+          <li class="cards-list_item"></li>
+          <li class="cards-list_item"></li>
+          <li class="cards-list_item"></li> -->
+        </div>
+      </section>
+    </main>
+    <footer></footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
