@@ -4,3 +4,53 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+
+:root.theme-light {
+    --bg_color: #fff;
+    --font_color: #000;
+    --accent_color: #000;
+    --btn_hover_color: #000;
+    --heart_contur: #000;
+    --core_mb_color: #000;
+    --bg_gradient_color: #d3d3d3;
+    --gradient_color: #e7e7e7;
+    --accent_gradient_color: #1a1a1a;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg_color: #fff;
+        --accent_color: #000;
+        --btn_hover_color: #000;
+        --heart_contur: red;
+        --core_mb_color: #000;
+        --bg_gradient_color: #d3d3d3;
+        --gradient_color: #e7e7e7;
+        --accent_gradient_color: #1a1a1a;
+    }
+}
+
+:root.theme-dark {
+    --bg_color: #000;
+    --font_color: #00CC14;
+    --bg_gradient_color: #000;
+    --gradient_color: #007F0C;
+    --accent_gradient_color: #004306;
+    --accent_color: #00cc14;
+    --heart_contur: #00cc14;
+    --btn_hover_color: #00CC14;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg_color: #000;
+        --font_color: #00CC14;
+        --bg_gradient_color: #000;
+        --gradient_color: #007F0C;
+        --accent_gradient_color: #004306;
+        --accent_color: #00cc14;
+        --heart_contur: #00cc14;
+        --btn_hover_color: #00CC14;
+    }
+}
