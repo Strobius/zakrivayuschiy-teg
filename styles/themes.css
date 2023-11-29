@@ -16,6 +16,10 @@
     --bg_gradient_color: #d3d3d3;
     --gradient_color: #e7e7e7;
     --accent_gradient_color: #1a1a1a;
+    --floppy_color: #fff;
+    --accent_hover_color: #fff;
+    --light_title_fw: 700;
+    --light_text_fw: 400;
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,6 +32,10 @@
         --bg_gradient_color: #d3d3d3;
         --gradient_color: #e7e7e7;
         --accent_gradient_color: #1a1a1a;
+        --floppy_color: #fff;
+        --accent_hover_color: #fff;
+        --light_title_fw: 700;
+        --light_text_fw: 400;
     }
 }
 
@@ -40,6 +48,11 @@
     --accent_color: #00cc14;
     --heart_contur: #00cc14;
     --btn_hover_color: #00CC14;
+    --floppy_color: #00CC14;
+    --accent_hover_color: #00CC14;
+    --core_mb_color: #00cc14;
+    --light_title_fw: 765;
+    --light_text_fw: 465;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,5 +65,10 @@
         --accent_color: #00cc14;
         --heart_contur: #00cc14;
         --btn_hover_color: #00CC14;
+        --floppy_color: #00CC14;
+        --accent_hover_color: #00CC14;
+        --core_mb_color: #00cc14;
+        --light_title_fw: 765;
+        --light_text_fw: 465;
     }
 }

@@ -15,11 +15,11 @@
 
 @keyframes a {
     0% {
-        left: -15px;
+        left: -20px;
     }
 
     100% {
-        left: -11px;
+        left: -16px;
     }
 }
 

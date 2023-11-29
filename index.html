@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
-    <link rel="icon" href="./images/favicon .ico" />
-    <link rel="icon" href="./svg/favicon .svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/favicon .png" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
@@ -106,7 +105,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -133,7 +132,7 @@
                   если я не справлюсь?
                 </p>
                 <p class="card-text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний о начале первого спринта.
                 </p>
               </span>
               <div class="buttons-container">
@@ -168,7 +167,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -193,7 +192,7 @@
                   себя.
                 </p>
                 <p class="card-text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний об окончании первого спринта.
                 </p>
               </span>
               <div class="buttons-container">
@@ -228,7 +227,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -254,7 +253,7 @@
                   сделать идеально, старались просто сделать.
                 </p>
                 <p class="card-text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний о начале второго спринта.
                 </p>
               </span>
               <div class="buttons-container">
@@ -289,7 +288,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -316,7 +315,7 @@
                   единомышленники, не правда ли?
                 </p>
                 <p class="card-text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний об окончании второго спринта.
                 </p>
               </span>
               <div class="buttons-container">
@@ -351,7 +350,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -375,7 +374,7 @@
                   Значит, пришло время посмотреть на задачу под другим углом.
                 </p>
                 <p class="card-text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний о начале третьего спринта.
                 </p>
               </span>
               <div class="buttons-container">
@@ -410,7 +409,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -436,7 +435,7 @@
                   Вспомните, откуда вы её черпали.
                 </p>
                 <p class="card-text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место для ваших воспоминаний об окончании третьего спринта.
                 </p>
               </span>
               <div class="buttons-container">
@@ -471,7 +470,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -499,7 +498,7 @@
                   есть результат.
                 </p>
                 <p class="card-text">
-                  Место для ваших воспоминаний о начале обучения.
+                  Место, чтобы остановиться, подумать и написать, что вы чувствуете в этой точке пути.
                 </p>
               </span>
               <div class="buttons-container">
@@ -534,7 +533,7 @@
                     />
                   </svg>
                 </button>
-                <button type="button" class="card__like-button">
+                <button type="button" class="card__like-button animation">
                   <span class="button__text"> Like </span>
                 </button>
               </div>
@@ -545,26 +544,30 @@
     </main>
     <footer class="save">
       <button
-        class="save-button"
-        onclick="window['#dialog'].showModal();"
+        class="save-button animation"
         type="button"
+        onclick="window['dialog'].showModal()"
         aria-controls="dialog"
       >
         <svg class="floppy" viewbox="0 0 21 21">
-          <use href="./svg/Small-floppy.svg"></use>
+          <use href="./svg/Small-floppy.svg#floppy"></use>
         </svg>
         <span class="button__text"> Сохранить на память </span>
       </button>
-      <dialog id="dialog">
+      <dialog id="dialog" class="dialog">
         <div class="dialog-content">
-          <button
-            type="button"
-            class="dialog-button"
-            onclick="window['dialog'].close();"
-          >
-            <span class="button__text">ок</span>
-          </button>
+          <svg class="dialog-image" viewBox="0 0 38 38">
+            <use href="./svg/Large-floppy.svg#floppy-Large"></use>
+          </svg>
+          <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
         </div>
+        <button
+          type="button"
+          class="dialog-button animation"
+          onclick="window['dialog'].close();"
+        >
+          <span class="button__text">ок</span>
+        </button>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
