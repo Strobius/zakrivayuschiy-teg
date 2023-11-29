@@ -40,7 +40,7 @@
   outline: 2px solid var(--accent_color, #000);
   font-family: var(--accent_font_family, 'Press Start 2P', 'fantasy');
   color: var(--font_color, #000);
-  font-weight: 400;
+  font-weight: var(--font_weight, 400);
 }
 
 .header-logo {
@@ -406,12 +406,12 @@
   align-items: center;
   background-color: var(--bg_color, #fff);
   outline: none;
-  border: 2px solid var(--accent_color, #000);
-  inline-size: clamp(306px, 295.7887px + 2.7230vw, 335px);; 
   min-block-size: 51px;
   margin-inline: auto;
   padding: 15px;
   position: relative;
+  border: 2px solid var(--accent_color, #000);
+  inline-size: clamp(306px, 295.7887px + 2.7230vw, 335px);
 }
 
 .save-button:hover {
@@ -438,8 +438,7 @@
 
 .dialog {
   margin: auto auto;
-  inline-size: clamp(341px, 335.3662px + 1.5023vw, 357px);
-  /* min-block-size: 195px; */
+  inline-size: clamp(341px, 335.3662px + 1.5022vw, 357px);
   background-color: var(--bg_color);
   padding: 30px;
   font-size: var(--accent_font_size, 14px);

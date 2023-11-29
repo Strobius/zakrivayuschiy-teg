@@ -7,5 +7,5 @@
     --header_text_size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
     --main_font_size: 18px;
     --accent_font_size: 14px;
-    --floppy_width: 
+    --font_weight: 400;
 }

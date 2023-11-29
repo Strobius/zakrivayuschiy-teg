@@ -1,1 +1,1 @@
- git@github.com:Strobius/slozhno-sosredotochitsya
+git@github.com:Strobius/zakrivayuschiy-teg-f
