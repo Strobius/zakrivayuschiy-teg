@@ -1,1 +1,1 @@
-https://github.com/Strobius/zakrivayuschiy-teg
+git@github.com:Strobius/zakrivayuschiy-teg
