@@ -2,7 +2,7 @@
 
 :root {
     --font_famaliy: "Inter-Variable", sans-serif;
-    --accent_font_family: 'Press Start 2P', 'fantasy';
+    --accent_font_family: 'Press Start 2P', fantasy;
     --logo_size: clamp(3.063rem, 2.7109rem + 1.5023vw, 4.063rem);
     --header_text_size: clamp(0.875rem, 0.6768rem + 0.8458vw, 1.438rem);
     --main_font_size: 18px;
