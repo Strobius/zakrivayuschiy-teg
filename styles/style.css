@@ -27,6 +27,7 @@
   background-attachment: fixed;
   background-position: center;
   font-family: var(--font_family, "Inter-Variable", sans-serif);
+  font-variation-settings: 'wght' var(--font_weight, 400);
 }
 
 @supports (font-variation-settings: normal) {
@@ -47,7 +48,6 @@
   outline: 2px solid var(--accent_color, #000);
   font-family: var(--accent_font_family, 'Press Start 2P', fantasy);
   color: var(--font_color, #000);
-  font-variation-settings: 'wght' var(--font_weight, 400);
 }
 
 .header-logo {
@@ -95,7 +95,7 @@
   background-color: var(--accent_color, #000);
   transform-origin: left;
   transform: scaleX(0);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -236,14 +236,9 @@
   gap: 27px;
 }
 
-.card-text {
-  font-variation-settings: 'wght' var(--light_text_fw, 400);
-}
-
 .buttons-container {
   display: flex;
   justify-content: end;
-  /* margin-block-start: 25px; */
   gap: 6px;
 }
 
@@ -324,7 +319,8 @@
 
 .save {
   display: block;
-  margin-block: 53px;
+  margin-block-start: 53px;
+  margin-block-end: 102px;
   color: #000;
 }
 
@@ -385,6 +381,7 @@
   color: var(--font_color);
   text-transform: uppercase;
   max-inline-size: 234px;
+  line-height: 21px;
 }
 
 .dialog-button {
